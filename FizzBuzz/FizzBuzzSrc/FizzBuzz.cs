@@ -1,24 +1,20 @@
-﻿namespace FizzBuzzSrc;
+﻿using System.Globalization;
+
+namespace FizzBuzzSrc;
 
 public class FizzBuzz
 {
+    /// <summary>
+    /// Utility for producing FizzBuzz output for a number.
+    /// </summary>
     public string Convert(int number)
     {
-        if (number % 3 == 0 && number % 5 == 0)
+        return (number % 3 == 0, number % 5 == 0) switch
         {
-            return "FizzBuzz";
-        }
-
-        if (number % 3 == 0)
-        {
-            return "Fizz";
-        }
-
-        if (number % 5 == 0)
-        {
-            return "Buzz";
-        }
-
-        return number.ToString();
+            (true, true) => "FizzBuzz",
+            (true, false) => "Fizz",
+            (false, true) => "Buzz",
+            _ => number.ToString(CultureInfo.InvariantCulture)
+        };
     }
 }
