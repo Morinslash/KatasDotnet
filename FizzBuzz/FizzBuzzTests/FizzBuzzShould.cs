@@ -40,4 +40,14 @@ public class FizzBuzzShould
         string result = _fizzBuzz.Convert(input);
         Assert.Equal(expected, result);
     }
+
+    [Theory]
+    [InlineData(15, "FizzBuzz")]
+    [InlineData(30, "FizzBuzz")]
+    [InlineData(45, "FizzBuzz")]
+    public void Return_FizzBuzz_For_Multiples_Of_Three_And_Five(int input, string expected)
+    {
+        string result = _fizzBuzz.Convert(input);
+        Assert.Equal(expected, result);
+    }
 }
