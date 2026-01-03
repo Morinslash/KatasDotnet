@@ -4,6 +4,7 @@ If you add a new kata, create a new folder alongside `FizzBuzz/` with a `README.
 Contributing
 
 - [FizzBuzz](FizzBuzz/README.md) — classic introductory kata: print numbers 1..100 with substitutions for multiples of 3 and 5.
+- [Leap Year](LeapYear/README.md) — determine whether a given year is a leap year using Gregorian rules.
 
 Index of katas
 
@@ -14,5 +15,3 @@ Index of katas
 What is a kata?
 
 This repository contains a set of programming katas — small exercises used to practice and improve programming skills by solving focused problems and iterating on solutions.
-
-
