@@ -7,7 +7,6 @@ public static class LeapYear
     /// </summary>
     public static bool IsLeapYear(int year)
     {
-        // placeholder; tests will drive implementation
-        return true;
+        return year % 4 == 0;
     }
 }
